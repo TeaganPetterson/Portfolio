@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 
 <head>
 	<meta charset="UTF-8">
 	<title>{% block title %}{% endblock %}</title>
-	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link rel="stylesheet" type="text/css" href="/static/styles.css">
 	<style>
 
 	</style>
@@ -13,24 +13,12 @@
 	{% endblock %}
 </head>
 
-<body>
-	<div class="content">
+<body class="website-background-black">
+	{% block content %}
 
-		<header>
-
-		</header>
-
-		<main>
-			{% block content %}
-
-			{% endblock %}
-		</main>
-
-		<footer>
-
-		</footer>
-	</div>
+	{% endblock %}
 	{% block scripts %}
+
 	{% endblock %}
 </body>
 
