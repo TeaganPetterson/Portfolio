@@ -218,8 +218,8 @@ h4 {
 	line-height: 140%;
 	font-size: 48px;
 	font-size: 40px;
-	margin: 16vh 0 4vh 0;
-	margin: 24vh 0 4vh 0;
+	/* margin: 16vh 0 4vh 0;
+	margin: 24vh 0 4vh 0; */
 }
 
 @media screen and (max-width: 767px) {
@@ -233,8 +233,8 @@ h5 {
 	line-height: 140%;
 	font-size: 36px;
 	font-size: 30px;
-	margin: 12vh 0 5vh 0;
-	margin: 12vh 0 3vh 0;
+	/* margin: 12vh 0 5vh 0;
+	margin: 12vh 0 3vh 0; */
 
 
 }
@@ -796,7 +796,7 @@ video {
 
 
 /*	=====================================================================
-								WORK LIST							
+						PROFESSIONAL EXPERIENCE LIST							
 	===================================================================== */
 
 .work-block {
@@ -807,6 +807,20 @@ video {
 	.work-block {
 		margin-top: 10vh 0;
 	}
+}
+
+.right-align {
+	text-align: right;
+	right: 0px;
+	width: 90%;
+	padding: 10px;
+}
+
+.left-align {
+	text-align: left;
+	left: 0px;
+	width: 90%;
+	padding: 10px;
 }
 
 /*	=====================================================================
