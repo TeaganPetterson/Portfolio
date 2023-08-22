@@ -521,11 +521,11 @@ video {
 }
 
 .label-hello:after {
-	content: "Hello.";
+	content: "Hello,";
 }
 
 .label-hello:hover:after {
-	content: "About";
+	content: "Contact";
 	text-decoration: underline;
 	font-style: italic;
 }
@@ -545,7 +545,7 @@ video {
 }
 
 .label-teagan:hover:after {
-	content: "Contact";
+	content: "About Me";
 	text-decoration: underline;
 	font-style: italic;
 }
