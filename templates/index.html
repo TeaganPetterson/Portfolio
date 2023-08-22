@@ -8,14 +8,9 @@
 
 {% block content %}
 
-<!-- <div class="vertical-center max-width animate delay06">
-	<h1 class="text-color-white label-hello on-hover-40 animate delay10" data-hover="About">Hello.</h1>
-	<h1 class="text-color-white label-iam on-hover-40 animate delay10 hide-mobile">I am</h1>
-	<h1 class="text-color-white label-teagan on-hover-40 animate delay10 hide-web">Teagan</h1>
-</div> -->
-
 <div class="vertical-center animate max-width-left-70">
 	<h1>
+
 		<div class="text-color-white label-hello on-hover-40 animate ">About</div>
 
 		<div class="text-color-red label-iam on-hover-40 animate delay04">Experience</div>
@@ -28,7 +23,7 @@
 <script>
 	const labels = document.querySelectorAll('.label-hello, .label-iam, .label-teagan');
 	labels.forEach(label => {
-		label.addEventListener('load', () => {
+		window.addEventListener('load', () => {
 			label.textContent = label.getAttribute('data-original')
 		})
 		label.addEventListener('mouseover', () => {
@@ -43,15 +38,15 @@
 		});
 	});
 
-	const emailLabel = document.querySelector('.label-email');
-	emailLabel.addEventListener('click', () => {
-		const email = "teagan.petterson1@gmail.com";
-		navigator.clipboard.writeText(email).then(() => {
-			emailLabel.textContent = "Email copied";
-		}).catch(() => {
-			emailLabel.textContent = "Copy to clipboard";
-		});
-	});
+	// const emailLabel = document.querySelector('.label-email');
+	// emailLabel.addEventListener('click', () => {
+	// 	const email = "teagan.petterson1@gmail.com";
+	// 	navigator.clipboard.writeText(email).then(() => {
+	// 		emailLabel.textContent = "Email copied";
+	// 	}).catch(() => {
+	// 		emailLabel.textContent = "Copy to clipboard";
+	// 	});
+	// });
 </script>
 
 {% endblock %}
