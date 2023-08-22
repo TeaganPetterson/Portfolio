@@ -427,17 +427,17 @@ video {
 .label-logo:after {
 	font-family: "Semibold";
 	font-size: 20px;
-	content: "dejan.";
+	content: "teagan.";
 }
 
 .label-logo:hover:after {
-	content: "dejan.works";
+	content: "teagan.works";
 	white-space: nowrap;
 }
 
 @media screen and (max-width: 767px) {
 	.label-logo:hover:after {
-		content: "dejan.";
+		content: "teagan.";
 	}
 }
 
@@ -536,11 +536,11 @@ video {
 	content: "Work";
 }
 
-.label-dejan:after {
-	content: "Dejan";
+.label-teagan:after {
+	content: "Teagan";
 }
 
-.label-dejan:hover:after {
+.label-teagan:hover:after {
 	content: "Contact";
 }
 
@@ -627,7 +627,7 @@ video {
 	right: 0;
 	bottom: 0;
 	left: 35%;
-	background-image: url(../img/DejanHome.png);
+	background-image: url(../img/TeaganHome.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -770,7 +770,7 @@ video {
 }
 
 .label-email:after {
-	content: "hello@dejan.works";
+	content: "teagan.petterson1@gmail.com";
 }
 
 .label-email:hover:after {

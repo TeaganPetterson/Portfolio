@@ -7,23 +7,62 @@
 {% endblock %}
 
 {% block content %}
-<div class="hide-mobile mobile-tap-area">
-	<div class="max-width">
-		<div class="vertical-center">
-			<h1>
-				<div class="text-color-white hide-text-block">
-					<div class="animate toggle-mobile-first" style="display: block;">Hello</div>
-				</div>
-				<div class="text-color-red hide-text-block">
-					<div class="animate delay04 toggle-mobile-first">I am</div>
-				</div>
-				<div class="text-color-red hide-text-block">
-					<div class="animate delay08 toggle-mobile-first">Teagan</div>
-				</div>
-			</h1>
-		</div>
-	</div>
+<!-- <div class="logo-inner hide-mobile">
+	<a href="#" class="label-logo text-color-white on-hover-40 animate delay08"></a>
 </div>
+
+<div class="logo-inner hide-web">
+	<a href="#" class="label-logo text-color-white on-hover-40 animate delay08">teagan.</a>
+</div>
+
+<div class="mobile-tap-area toggle-mobile-second">
+	<div class="tap-indication animate on-hover-40 delay06">tap</div>
+</div> -->
+
+<div class="vertical-center max-width animate delay06">
+	<h1 class="text-color-white label-hello on-hover-40 animate delay10">Hello.</h1>
+	<h1 class="text-color-white label-iam on-hover-40 animate delay10 hide-mobile">I am</h1>
+	<h1 class="text-color-white label-teagan on-hover-40 animate delay10 hide-web">Teagan</h1>
+</div>
+
+<div class="website-background-white animate delay10 max-width-left-70">
+	<!-- <div class="toggle-mobile-first">
+		<div class="tap-indication animate on-hover-40 delay06">tap</div>
+	</div> -->
+	<h2 class="text-color-black label-hello on-hover-40 animate delay06">About</h2>
+
+	<h2 class="text-color-black label-iam on-hover-40 animate delay08">Experience</h2>
+
+	<h2 class="text-color-black label-teagan on-hover-40 animate delay10">Contact</h2>
+	<!-- <p class="size-medium text-color-gray animate delay12">Email: <a href="mailto:teagan.petterson1@gmail.com"
+			class="label-email text-color-red"></a></p> -->
+</div>
+
+<script>
+	const labels = document.querySelectorAll('.label-hello, .label-iam, .label-teagan');
+	labels.forEach(label => {
+		label.addEventListener('mouseover', () => {
+			label.textContent = label.getAttribute('data-hover');
+		});
+		label.addEventListener('mouseout', () => {
+			label.textContent = label.getAttribute('data-original');
+		});
+		label.addEventListener('click', () => {
+			// Add your Flask route redirection logic here
+			console.log("Redirecting to route:", label.getAttribute('data-route'));
+		});
+	});
+
+	const emailLabel = document.querySelector('.label-email');
+	emailLabel.addEventListener('click', () => {
+		const email = "teagan.petterson1@gmail.com";
+		navigator.clipboard.writeText(email).then(() => {
+			emailLabel.textContent = "Email copied";
+		}).catch(() => {
+			emailLabel.textContent = "Copy to clipboard";
+		});
+	});
+</script>
 
 {% endblock %}
 
