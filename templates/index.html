@@ -8,16 +8,17 @@
 
 {% block content %}
 
-<div class="vertical-center animate max-width-left-70">
-	<h1>
+<div class="max-width">
+	<div class="vertical-center animate">
+		<h1>
+			<div class="text-color-white label-hello on-hover-40 animate ">About</div>
 
-		<div class="text-color-white label-hello on-hover-40 animate ">About</div>
+			<div class="text-color-red label-iam on-hover-40 animate delay04">Experience</div>
 
-		<div class="text-color-red label-iam on-hover-40 animate delay04">Experience</div>
+			<div class="text-color-red label-teagan on-hover-40 animate delay08">Contact</div>
 
-		<div class="text-color-red label-teagan on-hover-40 animate delay08">Contact</div>
-
-	</h1>
+		</h1>
+	</div>
 </div>
 
 <script>
@@ -38,15 +39,6 @@
 		});
 	});
 
-	// const emailLabel = document.querySelector('.label-email');
-	// emailLabel.addEventListener('click', () => {
-	// 	const email = "teagan.petterson1@gmail.com";
-	// 	navigator.clipboard.writeText(email).then(() => {
-	// 		emailLabel.textContent = "Email copied";
-	// 	}).catch(() => {
-	// 		emailLabel.textContent = "Copy to clipboard";
-	// 	});
-	// });
 </script>
 
 {% endblock %}

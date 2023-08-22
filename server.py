@@ -18,6 +18,11 @@ def contact_page():
       
 	  return render_template('contact.html')
 
+@app.route('/about_page')
+def about_page():
+      
+	  return render_template('about.html')
+
 @app.route('/experience_page')
 def experience_page():
 

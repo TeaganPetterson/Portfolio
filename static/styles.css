@@ -1,29 +1,29 @@
 @font-face {
 	font-family: 'Regular';
-	src: url('/static/fonts/Graphik-Regular.eot');
-	src: url('/static/fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
-		url('/static/fonts/Graphik-Regular.woff') format('woff'),
-		url('/static/fonts/Graphik-Regular.ttf') format('truetype');
+	src: url('/static/fonts/GraphikRegular.otf');
+	src: url('/static/fonts/GraphikRegular.otf?#iefix') format('embedded-opentype'),
+		url('/static/fonts/GraphikRegular.otf') format('woff'),
+		url('/static/fonts/GraphikRegular.otf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Semibold';
-	src: url('/static/fonts/Graphik-Semibold.eot');
-	src: url('/static/fonts/Graphik-Semibold.eot?#iefix') format('embedded-opentype'),
-		url('/static/fonts/Graphik-Semibold.woff') format('woff'),
-		url('/static/fonts/Graphik-Semibold.ttf') format('truetype');
+	src: url('/static/fonts/GraphikSemibold.otf');
+	src: url('/static/fonts/GraphikSemibold.otf?#iefix') format('embedded-opentype'),
+		url('/static/fonts/GraphikSemibold.otf') format('woff'),
+		url('/static/fonts/GraphikSemibold.otf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Medium';
-	src: url('/static/fonts/Graphik-Medium.eot');
-	src: url('/static/fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
-		url('/static/fonts/Graphik-Medium.woff') format('woff'),
-		url('/static/fonts/Graphik-Medium.ttf') format('truetype');
+	src: url('/static/fonts/GraphikMedium.otf');
+	src: url('/static/fonts/GraphikMedium.otf?#iefix') format('embedded-opentype'),
+		url('/static/fonts/GraphikMedium.otf') format('woff'),
+		url('/static/fonts/GraphikMedium.otf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
 }
@@ -526,6 +526,8 @@ video {
 
 .label-hello:hover:after {
 	content: "About";
+	text-decoration: underline;
+	font-style: italic;
 }
 
 .label-iam:after {
@@ -534,6 +536,8 @@ video {
 
 .label-iam:hover:after {
 	content: "Experience";
+	text-decoration: underline;
+	font-style: italic;
 }
 
 .label-teagan:after {
@@ -542,6 +546,8 @@ video {
 
 .label-teagan:hover:after {
 	content: "Contact";
+	text-decoration: underline;
+	font-style: italic;
 }
 
 .label-error:after {
