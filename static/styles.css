@@ -535,7 +535,7 @@ video {
 }
 
 .label-iam:hover:after {
-	content: "Experience";
+	content: "Expertise";
 	text-decoration: underline;
 	font-style: italic;
 }
@@ -545,7 +545,7 @@ video {
 }
 
 .label-teagan:hover:after {
-	content: "About Me";
+	content: "About";
 	text-decoration: underline;
 	font-style: italic;
 }
@@ -632,13 +632,13 @@ video {
 	top: 0;
 	right: 0;
 	bottom: 0;
-	left: 35%;
-	background-image: url(../img/TeaganHome.png);
+	left: 60%;
+	background-image: url(../static/img/TeaganHome.png);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: auto 100%;
 
 	-webkit-animation: bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
 	-moz-animation: bg-photo 1.2s cubic-bezier(.5, .6, .6, 1);
@@ -647,6 +647,8 @@ video {
 	-moz-animation-fill-mode: backwards;
 	animation-fill-mode: backwards;
 }
+
+
 
 @media screen and (max-width: 767px) {
 	.bg-photo {
@@ -685,7 +687,6 @@ video {
 		left: -8%;
 	}
 }
-
 
 /*	=====================================================================
 							HOMEPAGE MOBILE							
@@ -807,6 +808,11 @@ video {
 	.work-block {
 		margin-top: 10vh 0;
 	}
+}
+
+.experience-spacing {
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 .right-align {
