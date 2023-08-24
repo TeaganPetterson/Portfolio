@@ -7,41 +7,160 @@
 {% endblock %}
 
 {% block content %}
-<!-- Hamburger Menu -->
-<label for="toggle" class="hamburger">
-	<div class="top-bun"></div>
-	<div class="meat"></div>
-	<div class="bottom-bun"></div>
-</label>
-
-<div class="nav">
-	<div class="nav-wrapper">
-		<nav>
-			<a href="#">HOME</a><br>
-			<a href="#">ABOUT</a><br>
-			<a href="#">WORK</a><br>
-			<a href="#">SERVICES</a>
-		</nav>
-	</div>
-</div>
-
 
 <div class="max-width experience-spacing">
-	<div class="text-color-black experience-spacing">
-		<h3>
-			HackBright Academy
-		</h3>
-		<p class="size-small text-color-red">
-			Software Engineering Fellow
-		</p>
+	<div class="logo">
+		<div class="logo-inner">
+			<a href="/" class="label-logo on-hover--40 text-color-black"></a>
+		</div>
 	</div>
-	<div class="text-color-black experience-spacing">
-		<h3>
-			Chick-Fil-A
-		</h3>
-		<p class="size-small text-color-red">
-			Manager, Training and Development
-		</p>
+	<div class="top-bottom-margin animate">
+		<div class="text-color-black experience-spacing job" id="hackbrightJob">
+			<h3 class="on-hover-40">
+				HackBright Academy
+			</h3>
+			<p class="size-small text-color-red">
+				Software Engineering Fellow
+			</p>
+			<ul class="size-small text-color-black job-description">
+				<li>Completed accelerated software program in 12 weeks</li>
+				<li>Website developer using Python, JS, HTML, CSS and related libraries</li>
+				<li>Endorsed collaboration using agile methodology with daily scrums and pair programming</li>
+				<li>Supported 11 software engineers to optimize each individuals’ projects</li>
+
+			</ul>
+		</div>
+		<div class="text-color-black experience-spacing job" id="crumblJob">
+			<h3 class="on-hover-40">
+				Crumbl Cookies
+			</h3>
+			<p class="size-small text-color-red">
+				Travelling Business Consultant
+			</p>
+			<ul class="size-small text-color-black job-description">
+				<li>Directed formation of franchise leadership teams
+					<ul>
+						<li>
+							Consulted in the beginning of 15 franchises (21 managers and 80 shift leads)
+						</li>
+					</ul>
+				</li>
+				<li>Designed programs to accelerate individual, team and franchise growth opportunities
+					<ul>
+						<li>
+							Learned 4 different training curriculums in 6 months
+						</li>
+						<li>
+							Furthered training at Crumbl University
+						</li>
+					</ul>
+				</li>
+				<li>Train new franchise partners how to start a successful business
+					<ul>
+						<li>
+							Encourage leadership to support franchise partners‘ objectives
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="text-color-black experience-spacing job" id="cfaJob">
+			<h3 class="on-hover-40">
+				Chick-Fil-A
+			</h3>
+			<p class="size-small text-color-red">
+				Director, Training and Development
+			</p>
+			<ul class="size-small text-color-black job-description">
+				<li>Motivated team to consistently set and break regional sales records
+					<ul>
+						<li>
+							Sold $46,000 of product in a single day
+						</li>
+						<li>
+							Managed consecutive $6,000 hours
+						</li>
+						<li>
+							Dropped labor/sales percentage from 26% to 21%
+						</li>
+					</ul>
+				</li>
+				<li>Discover and cultivate strength in teammates
+					<ul>
+						<li>
+							Incorporated “Aces in Their Places” philosophy
+						</li>
+					</ul>
+				</li>
+				<li>Fused training and hiring methods lowering hiring costs
+				</li>
+			</ul>
+		</div>
+		<div class="text-color-black experience-spacing job" id="brJob">
+			<h3 class="on-hover-40">
+				Baskin Robbins
+			</h3>
+			<p class="size-small text-color-red">
+				General Manager
+			</p>
+			<ul class="size-small text-color-black job-description">
+				<li>Boosted team morale directly relating to cohesive relationships
+					<ul>
+						<li>
+							Increased employee loyalty by 400% (6 weeks to 6 months)
+						</li>
+					</ul>
+				</li>
+				<li>Established new hiring and training strategies
+					<ul>
+						<li>
+							Decreased labor costs by 22% from $27/hour to $18/hour
+						</li>
+					</ul>
+				</li>
+				<li>Arranged activities and promotions for customers and employees benefit
+					<ul>
+						<li>
+							Implemented “Scooper Star” program
+						</li>
+						<li>
+							Established “friends and family” activity nights
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="text-color-black experience-spacing job" id="flJob">
+			<h3 class="on-hover-40">
+				Foot Locker
+			</h3>
+			<p class="size-small text-color-red">
+				Assistant Manager
+			</p>
+			<ul class="size-small text-color-black job-description">
+				<li>Designed aesthetically functional store setup
+					<ul>
+						<li>
+							Collaborated directly with Nike design executive
+						</li>
+					</ul>
+				</li>
+				<li>Trained and supported team members toward successful sales and service
+					<ul>
+						<li>
+							Created new training system to expedite and improve training process
+						</li>
+					</ul>
+				</li>
+				<li>Implemented quality leadership training for management and shift leads
+					<ul>
+						<li>
+							Utilized lessons from successful executive coaches
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 </div>
@@ -49,5 +168,14 @@
 {% endblock %}
 
 {% block scripts %}
+<script>
+	const jobTitles = document.querySelectorAll('.job');
+	const jobDescriptions = document.querySelectorAll('.job-description');
 
+	jobTitles.forEach((title, index) => {
+		title.addEventListener('click', () => {
+			jobDescriptions[index].classList.toggle('show-description');
+		});
+	});
+</script>
 {% endblock %}

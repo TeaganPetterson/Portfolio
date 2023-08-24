@@ -299,7 +299,7 @@ ul {
 	line-height: 180%;
 	font-family: 'Regular';
 	font-size: 18px;
-	margin-bottom: 5vh;
+	/* margin-bottom: 5vh; */
 }
 
 li {
@@ -986,6 +986,20 @@ video {
 	.iphone-video video {
 		height: 52vh;
 	}
+}
+
+/* Initially hide job descriptions */
+.job {
+	cursor: pointer;
+}
+
+.job-description {
+	display: none;
+}
+
+/* Show job descriptions when the "show-description" class is applied */
+.show-description {
+	display: block;
 }
 
 #toggle {
