@@ -348,6 +348,11 @@ a.text-color-red:visited {
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
+.hover-adjust:hover:after {
+	text-decoration: underline;
+	font-style: italic;
+}
+
 .on-hover-40:hover {
 	margin-left: 40px;
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
@@ -358,10 +363,7 @@ a.text-color-red:visited {
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
-.hover-adjust:hover:after {
-	text-decoration: underline;
-	font-style: italic;
-}
+
 
 @media screen and (max-width: 767px) {
 	.on-hover-40:hover {
