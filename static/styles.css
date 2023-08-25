@@ -351,13 +351,16 @@ a.text-color-red:visited {
 .on-hover-40:hover {
 	margin-left: 40px;
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
-	text-decoration: underline;
-	font-style: italic;
 }
 
 .on-hover--40:hover {
 	margin-left: -40px;
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+.hover-adjust:hover:after {
+	text-decoration: underline;
+	font-style: italic;
 }
 
 @media screen and (max-width: 767px) {
@@ -397,7 +400,7 @@ video {
 
 .max-width {
 	max-width: 68%;
-	max-width: 21.5em;
+	max-width: 20.5em;
 	margin: 0 auto;
 }
 
@@ -410,7 +413,8 @@ video {
 
 /* ------ Logo ------ */
 .logo {
-	float: right;
+	position: fixed;
+	right: 20%;
 }
 
 .logo-inner {
@@ -429,7 +433,7 @@ video {
 .label-logo:after {
 	font-family: "Semibold";
 	font-size: 20px;
-	content: "teagan";
+	content: "teagan-chase";
 }
 
 .label-logo:hover:after {
@@ -439,7 +443,7 @@ video {
 
 @media screen and (max-width: 767px) {
 	.label-logo:hover:after {
-		content: "teagan.";
+		content: "teagan-chase.com";
 	}
 }
 
@@ -527,7 +531,7 @@ video {
 }
 
 .label-hello:hover:after {
-	content: "Contact";
+	content: "About";
 	text-decoration: underline;
 	font-style: italic;
 }
@@ -537,7 +541,7 @@ video {
 }
 
 .label-iam:hover:after {
-	content: "Expertise";
+	content: "Experience";
 	text-decoration: underline;
 	font-style: italic;
 }
@@ -547,7 +551,7 @@ video {
 }
 
 .label-teagan:hover:after {
-	content: "About";
+	content: "Contact";
 	text-decoration: underline;
 	font-style: italic;
 }
