@@ -8,48 +8,49 @@
 
 {% block content %}
 
-<div class="max-width">
-	<div class="vertical-center animate">
-		<h1>
-			<a href="/about">
-				<div class="text-color-black label-hello on-hover-40 animate"></div>
-			</a>
+<body class="website-background-white">
+	<div class="max-width-homepage">
+		<div class="vertical-center animate">
+			<h1>
+				<a href="/about">
+					<div class="text-color-black label-hello on-hover-40 animate"></div>
+				</a>
 
-			<a href="/experience">
-				<div class="text-color-red label-iam on-hover-40 animate delay04"></div>
-			</a>
+				<a href="/experience">
+					<div class="text-color-red label-iam on-hover-40 animate delay04"></div>
+				</a>
 
-			<a href="/contact">
-				<div class="text-color-red label-teagan on-hover-40 animate delay08"></div>
-			</a>
+				<a href="/contact">
+					<div class="text-color-red label-teagan on-hover-40 animate delay08"></div>
+				</a>
 
-		</h1>
+			</h1>
+		</div>
 	</div>
-</div>
-<div class="bg-photo">
+	<div class="bg-photo">
 
-</div>
+	</div>
 
-<script>
-	const labels = document.querySelectorAll('.label-hello, .label-iam, .label-teagan');
-	labels.forEach(label => {
-		window.addEventListener('load', () => {
-			label.textContent = label.getAttribute('data-original')
-		})
-		label.addEventListener('mouseover', () => {
-			label.textContent = label.getAttribute('data-hover');
+	<script>
+		const labels = document.querySelectorAll('.label-hello, .label-iam, .label-teagan');
+		labels.forEach(label => {
+			window.addEventListener('load', () => {
+				label.textContent = label.getAttribute('data-original')
+			})
+			label.addEventListener('mouseover', () => {
+				label.textContent = label.getAttribute('data-hover');
+			});
+			label.addEventListener('mouseout', () => {
+				label.textContent = label.getAttribute('data-original');
+			});
+			label.addEventListener('click', () => {
+				// Add your Flask route redirection logic here
+				console.log("Redirecting to route:", label.getAttribute('data-route'));
+			});
 		});
-		label.addEventListener('mouseout', () => {
-			label.textContent = label.getAttribute('data-original');
-		});
-		label.addEventListener('click', () => {
-			// Add your Flask route redirection logic here
-			console.log("Redirecting to route:", label.getAttribute('data-route'));
-		});
-	});
 
-</script>
-
+	</script>
+</body>
 {% endblock %}
 
 {% block scripts %}

@@ -348,10 +348,15 @@ a.text-color-red:visited {
 	transition: all .4s cubic-bezier(0.2, 0.6, 0.2, 1);
 }
 
-.hover-adjust:hover:after {
-	text-decoration: underline;
-	font-style: italic;
+/* .hover-adjust:after {
+	font-style: normal;
+	text-decoration: none;
 }
+
+.hover-adjust:hover:after {
+	font-style: italic;
+	text-decoration: underline;
+} */
 
 .on-hover-40:hover {
 	margin-left: 40px;
@@ -401,8 +406,14 @@ video {
 }
 
 .max-width {
-	max-width: 68%;
+	/* max-width: 68%; */
 	max-width: 20.5em;
+	margin: 0 auto;
+}
+
+.max-width-homepage {
+	max-width: 68%;
+	max-width: 25.5em;
 	margin: 0 auto;
 }
 
@@ -416,7 +427,8 @@ video {
 /* ------ Logo ------ */
 .logo {
 	position: fixed;
-	right: 20%;
+	right: 19%;
+	z-index: 999;
 }
 
 .logo-inner {
@@ -509,6 +521,9 @@ video {
 	position: relative;
 }
 
+.horizontal-center {
+	text-align: center;
+}
 
 
 
@@ -526,6 +541,26 @@ video {
 	-webkit-align-items: center;
 	/* Safari */
 	align-items: center;
+}
+
+.label-software:after {
+	content: "Software";
+}
+
+.label-software:hover:after {
+	content: "Software";
+	text-decoration: underline;
+	font-style: italic;
+}
+
+.label-professional:after {
+	content: "Professional";
+}
+
+.label-professional:hover:after {
+	content: "Professional";
+	text-decoration: underline;
+	font-style: italic;
 }
 
 .label-hello:after {
@@ -631,6 +666,16 @@ video {
 .delay12 {
 	-webkit-animation-delay: 1.2s;
 	animation-delay: 1.2s;
+}
+
+.delay14 {
+	-webkit-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+}
+
+.delay16 {
+	-webkit-animation-delay: 1.6s;
+	animation-delay: 1.6s;
 }
 
 /* ------ Background photo ------ */
@@ -847,12 +892,30 @@ video {
 	overflow: hidden;
 }
 
+.hero-image-full {
+	max-width: none;
+	margin-right: 0px;
+}
+
+.hero-image-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 
 .hero-image {
-	width: 100vw;
-	height: 90vh;
+	width: 85vw;
 	overflow: hidden;
-	margin: 30vh 0;
+	margin: 10vh 0;
+	float: left;
+}
+
+.hero-image-fade {
+	box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.5);
+	;
 }
 
 @media screen and (max-width: 767px) {
