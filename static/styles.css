@@ -1151,11 +1151,6 @@ nav a:before {
 	transition: all 0.2s ease-in-out;
 }
 
-
-
-
-
-
 nav a:hover {
 	color: white;
 	text-decoration: underline;
