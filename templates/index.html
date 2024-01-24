@@ -1,58 +1,64 @@
-{% extends "base.html" %}
-
-{% block title %}Teagan Petterson{% endblock %}
-
-{% block stylesheets %}
-<link rel="stylesheet" type="text/css" href="/static/styles.css">
-{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% block title %}Teagan Petterson{% endblock %} {%
+block stylesheets %}
+<link rel="stylesheet" type="text/css" href="/static/styles.css" />
+{% endblock %} {% block content %}
 
 <body class="website-background-white">
-	<div class="max-width-homepage">
-		<div class="vertical-center animate">
-			<h1>
-				<a href="/about">
-					<div class="text-color-black label-hello on-hover-40 animate"></div>
-				</a>
+    <div class="max-width-homepage">
+        <div class="vertical-center animate">
+            <h1>
+                <a href="/about">
+                    <div
+                        class="text-color-black label-hello on-hover-40 animate"
+                    ></div>
+                </a>
 
-				<a href="/experience">
-					<div class="text-color-red label-iam on-hover-40 animate delay04"></div>
-				</a>
+                <a href="/experience">
+                    <div
+                        class="text-color-red label-iam on-hover-40 animate delay04"
+                    ></div>
+                </a>
 
-				<a href="/contact">
-					<div class="text-color-red label-teagan on-hover-40 animate delay08"></div>
-				</a>
+                <a href="/contact">
+                    <div
+                        class="text-color-red label-teagan on-hover-40 animate delay08"
+                    ></div>
+                </a>
+            </h1>
+        </div>
+    </div>
+    <div class="bg-photo"></div>
 
-			</h1>
-		</div>
-	</div>
-	<div class="bg-photo">
-
-	</div>
-
-	<script>
-		const labels = document.querySelectorAll('.label-hello, .label-iam, .label-teagan');
-		labels.forEach(label => {
-			window.addEventListener('load', () => {
-				label.textContent = label.getAttribute('data-original')
-			})
-			label.addEventListener('mouseover', () => {
-				label.textContent = label.getAttribute('data-hover');
-			});
-			label.addEventListener('mouseout', () => {
-				label.textContent = label.getAttribute('data-original');
-			});
-			label.addEventListener('click', () => {
-				// Add your Flask route redirection logic here
-				console.log("Redirecting to route:", label.getAttribute('data-route'));
-			});
-		});
-
-	</script>
+    <script>
+        const labels = document.querySelectorAll(
+            ".label-hello, .label-iam, .label-teagan"
+        );
+        labels.forEach((label) => {
+            window.addEventListener("load", () => {
+                label.textContent = label.getAttribute("data-original");
+            });
+            label.addEventListener("mouseover", () => {
+                label.textContent = label.getAttribute("data-hover");
+            });
+            label.addEventListener("mouseout", () => {
+                label.textContent = label.getAttribute("data-original");
+            });
+            label.addEventListener("click", () => {
+                // Add your Flask route redirection logic here
+                console.log(
+                    "Redirecting to route:",
+                    label.getAttribute("data-route")
+                );
+            });
+        });
+    </script>
 </body>
-{% endblock %}
+{% endblock %} {% block scripts %} {% endblock %}
 
-{% block scripts %}
+<!-- ns-620.awsdns-13.net
 
-{% endblock %}
+ns-1213.awsdns-23.org
+
+ns-287.awsdns-35.com
+
+ns-1565.awsdns-03.co.uk -->
